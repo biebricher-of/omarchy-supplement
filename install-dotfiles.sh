@@ -55,7 +55,7 @@ if [ $? -eq 0 ]; then
 
   cd "$REPO_NAME"
 
-  #stow_bash
+  stow_bash
   stow_starship
   stow_keepassxc
   stow_omarchy-overrides

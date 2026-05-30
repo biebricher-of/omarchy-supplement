@@ -6,6 +6,7 @@
 . ./install-starship.sh
 . ./install-yazi.sh
 . ./install-zed.sh
+. ./install-cliamp.sh
 
 # last steps
 . ./remove-packages.sh

@@ -27,6 +27,12 @@ stow_keepassxc() {
   stow keepassxc
 }
 
+stow_cliamp() {
+  echo "stow cliamp"
+  rm -rf ~/.config/cliamp &> /dev/null
+  stow cliamp
+}
+
 stow_omarchy-overrides() {
   echo "stow omarchy-overrides"
   rm -rf ~/.config/omarchy-overrides &> /dev/null
@@ -58,6 +64,7 @@ if [ $? -eq 0 ]; then
   stow_bash
   stow_starship
   stow_keepassxc
+  stow_cliamp
   stow_omarchy-overrides
 
 else

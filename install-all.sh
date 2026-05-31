@@ -11,5 +11,6 @@
 # last steps
 . ./remove-packages.sh
 . ./install-dotfiles.sh
-. ./install-overrides.sh
+. ./install-hyprland-overrides.sh
+. ./install-bash-overrides.sh
 

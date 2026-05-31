@@ -33,10 +33,10 @@ stow_cliamp() {
   stow cliamp
 }
 
-stow_omarchy-overrides() {
-  echo "stow omarchy-overrides"
-  rm -rf ~/.config/omarchy-overrides &> /dev/null
-  stow omarchy-overrides
+stow_hypr-overrides() {
+  echo "stow hypr-overrides"
+  rm -rf ~/.config/hypr-overrides &> /dev/null
+  stow hypr-overrides
 }
 
 # Program flow
@@ -65,7 +65,7 @@ if [ $? -eq 0 ]; then
   stow_starship
   stow_keepassxc
   stow_cliamp
-  stow_omarchy-overrides
+  stow_hypr-overrides
 
 else
   echo "Failed to clone the repository."

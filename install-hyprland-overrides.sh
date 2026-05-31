@@ -4,12 +4,12 @@ set -e
 
 HYPRLAND_CONFIG="$HOME/.config/hypr/hyprland.conf"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-OVERRIDES_CONFIG="$HOME/.config/omarchy-overrides/hyprland-overrides.conf"
+OVERRIDES_CONFIG="$HOME/.config/hypr-overrides/hyprland-overrides.conf"
 SOURCE_LINE="source = $OVERRIDES_CONFIG"
 
 # Check if hyprland config exists
 if [ ! -f "$HYPRLAND_CONFIG" ]; then
-  echo "Hyprland cinfig not found at $HYPRLAND_CONFIG"
+  echo "Hyprland config not found at $HYPRLAND_CONFIG"
   echo "Please install hyprland first"
   exit 1
 fi
